@@ -1,0 +1,116 @@
+BlockChances:
+  COAL_ORE: 20 # 20% chance for coal to spawn
+  IRON_ORE: 20 # 20% chance for iron to spawn
+  REDSTONE_ORE: 10 # 10% chance for redstone to spawn
+  LAPIS_ORE: 10 # 10% chance for lapis to spawn
+  GOLD_ORE: 8 # 8% chance for gold to spawn
+  DIAMOND_ORE: 7 # 7% chance for diamond to spawn
+  EMERALD_ORE: 5 # 5% chance for emerald to spawn
+  # 20% chance for stone to spawn
+BlockDrops:
+  COAL_ORE: # for coal block
+    ==: org.bukkit.inventory.ItemStack # DO NOT TOUCH
+    type: COAL # item is coal
+    amount: 1 # how much of the item will you get
+    meta:
+      ==: ItemMeta # DO NOT TOUCH
+      meta-type: UNSPECIFIC # DO NOT TOUCH
+      display-name: Warzone Coal # item display name
+      lore: # text below the item name
+        - You can get item by
+        - mining in the warzone
+      enchants: # enchantments
+        PROTECTION_ENVIRONMENTAL: 1 # to add an enchantment glint to the item
+      ItemFlags: !!set # flags tell minecraft what NBT data to hide from the player
+        HIDE_ENCHANTS: null # tells minecraft to hide the enchantments (only the enchantment glint stays)
+  IRON_ORE:
+    ==: org.bukkit.inventory.ItemStack
+    type: IRON_INGOT
+    amount: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Warzone Iron
+      lore:
+        - You can get this item by
+        - mining in the warzone
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+      ItemFlags: !!set
+        HIDE_ENCHANTS: null
+  GLOWING_REDSTONE_ORE: # it is GLOWING_REDSTONE_ORE and not REDSTONE_ORE because redstone ore glows when you click it (can't mine it without making it glow)
+    ==: org.bukkit.inventory.ItemStack
+    type: REDSTONE
+    amount: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Warzone Redstone
+      lore:
+        - You can get this item by
+        - mining in the warzone
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+      ItemFlags: !!set
+        HIDE_ENCHANTS: null
+  LAPIS_ORE:
+    ==: org.bukkit.inventory.ItemStack
+    type: INK_SACK
+    damage: 4
+    amount: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Warzone Lapis
+      lore:
+        - You can get this item by
+        - mining in the warzone
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+      ItemFlags: !!set
+        HIDE_ENCHANTS: null
+  GOLD_ORE:
+    ==: org.bukkit.inventory.ItemStack
+    type: GOLD_INGOT
+    amount: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Warzone Gold
+      lore:
+        - You can get this item by
+        - mining in the warzone
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+      ItemFlags: !!set
+        HIDE_ENCHANTS: null
+  DIAMOND_ORE:
+    ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND
+    amount: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Warzone Diamond
+      lore:
+        - You can get this item by
+        - mining in the warzone
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+      ItemFlags: !!set
+        HIDE_ENCHANTS: null
+  EMERALD_ORE:
+    ==: org.bukkit.inventory.ItemStack
+    type: EMERALD
+    amount: 1
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: Warzone Emerald
+      lore:
+        - You can get this item by
+        - mining in the warzone
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 1
+      ItemFlags: !!set
+        HIDE_ENCHANTS: null

@@ -1,0 +1,20 @@
+name: WarzoneOreVeins
+version: 1.0.0
+main: me.perry1900.warzoneoreveins.WarzoneOreVeins
+author: Perry1900
+description: Allows the server owner to create ore veins like in the warzone in the private SMP server some youtuber played H4M
+commands:
+    Giveoreveinblock:
+        description: Give yourself an ore vein block
+        aliases: [GetOreVeinBlock, OreVeinBlockGive, OreVeinBlockGet]
+    AddItemDrop:
+        description: Set an item that ore vein blocks will drop when mined
+        aliases: [itemdrop,setitemdrop,oreveinitemdrop,itemdropadd,itemdropset]
+        usage: "Usage: /AddItemDrop [block material] when holding the item you want the block to drop"
+permissions:
+    WarzoneOreVeins.GiveOreVeinBlock:
+        description: Allows you to use the giveoreveinblock command
+        default: op
+    WarzoneOreVeins.AddItemDrop:
+        description: Allows you to use the additemdrop command
+        default: op
