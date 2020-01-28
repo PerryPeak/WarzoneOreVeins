@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Warzone Ore Veins:jar2">
+    <output-path>F:/Desktop/Edo/Server/plugins</output-path>
+    <root id="archive" name="Warzone Ore Veins.jar">
+      <element id="module-output" name="Warzone Ore Veins" />
+      <element id="file-copy" path="$PROJECT_DIR$/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+    </root>
+  </artifact>
+</component>
