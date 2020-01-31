@@ -15,4 +15,4 @@
 * Luck based drops (to make it so the same ore can have multiple drops)
 
 ## Known Issues
-* The plugin can flood the console with an error message when someone places blocks in creative mode
+* The plugin sometimes floods the console with error messages when someone places blocks in creative mode
